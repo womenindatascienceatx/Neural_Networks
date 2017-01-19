@@ -18,13 +18,37 @@
 `(tensorflow)$  # Your prompt should change`
 
 
-### 3. Install Tensorflow using conda
+## 3. Install Tensorflow using PIP
 
-A community maintained conda package is available from conda-forge.
+It is very important to use PIP and not conda to install.  The current version of tensorflow is buggy but we can install the old version with PIP.
 
-Only the CPU version of TensorFlow is available at the moment and can be installed in the conda environment for Python 2 or Python 3.
 
-`(tensorflow)$ conda install -c conda-forge tensorflow`
+### 3.1 Pick your binary  
+#### Mac OS X, CPU only   
+##### Python 2.7:
+
+`(tensorflow)$ export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-0.10.0-py2-none-any.whl`
+
+##### Python 3.4 or 3.5:
+`(tensorflow)$ export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-0.10.0-py3-none-any.whl`
+
+#### Ubuntu/Linux 64-bit, CPU only
+##### Python 2.7
+`(tensorflow)$ export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.10.0-cp27-none-linux_x86_64.whl`
+
+##### Python 3.5
+`(tensorflow)$ export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.10.0-cp35-cp35m-linux_x86_64.whl`
+
+
+### 3.2 FINALLY install tensorflow OS X and Ubuntu/Linux!
+
+#### Python 2
+`(tensorflow)$ pip install --upgrade $TF_BINARY_URL`
+
+#### Python 3
+`(tensorflow)$ pip3 install --upgrade $TF_BINARY_URL`
+
+
 
 ## Windows
 
