@@ -70,6 +70,11 @@ Tensorflow only works with python 3.5 in Windows.
 
  `pip install --upgrade https://storage.googleapis.com/tensorflow/windows/cpu/tensorflow-0.12.1-cp35-cp35m-win_amd64.whl`
 
+##  Everyone
+
+To force your environment to run in tensorflow use the following command in terminal
+`KERAS_BACKEND=tensorflow; python -c "from keras import backend"`
+
 ## Install packages for workshop
 ##### Basic packages for visualization and running code:   
  `pip install jupyter`  
