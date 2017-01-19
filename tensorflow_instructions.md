@@ -69,3 +69,14 @@ Tensorflow only works with python 3.5 in Windows.
 ##### 3. Use pip to install tensorflow
 
  `pip install --upgrade https://storage.googleapis.com/tensorflow/windows/cpu/tensorflow-0.12.1-cp35-cp35m-win_amd64.whl`
+
+## Install packages for workshop
+##### Basic packages for visualization and running code:   
+ `pip install jupyter`  
+ `conda install matplotlib`   
+ `conda install pandas`  
+##### Neural network package:  
+ `pip install keras`  
+##### Image processing:  
+ `pip install h5py`  
+ `pip install pillow`
